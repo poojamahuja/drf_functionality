@@ -1,0 +1,37 @@
+SUCCESS = "Success"
+EXTRA_FIELDS_IN_PAYLOAD = "Payload contain extra fields - '{0}'"
+REQUIRED_FIELD_CONTEXT = "{0} field is required."
+REQUIRED_FIELD = "This field is required."
+REQUIRED_PARAMS = "This params is required."
+BLANK_FIELD = "This field may not be blank."
+BLANK_PARAM = "This params may not be blank."
+BAD_REQUEST = "Malformed request. Please check the contents and retry."
+BAD_PAYLOAD_REQUEST = "Malformed request payload. Please check the payload and retry."
+RESOURCE_NOT_FOUND = "The requested resource could not be found."
+UNEXPECTED_ERROR = "We're sorry, something went wrong. If the problem persists please contact to system administrator."
+BAD_SEARCH_REQUEST = "Malformed request query param. Please check the query param and retry."
+STATE_OR_COUNTRY_DATA_ERROR = "Please provide all the relevant information."
+STAFF_USER_REQUIRED = "Staff user is required before executing any other tasks into the application."
+EMAIL_SERVER_BUSY = "The email server is busy. Please retry after some time."
+EMAIL_EXIST_ERROR = "Email is already registered."
+USER_CONFIRM_PASSWORD_NOT_MATCH = "Confirm password, does not match with the password."
+RECORD_CREATED = "Record created successfully."
+RECORD_DELETED = "Record deleted successfully."
+RECORD_UPDATED = "Record updated successfully."
+RECORD_NOT_EXIST = "Record does not exist or deleted."
+
+# User Management Messages
+USER_CREATION_SUCCESS = "User created successfully."
+LOGIN_SUCCESS = "User logged in successfully."
+
+# SMTP Module Messages
+SMTP_CREDENTIAL_GENERATION_SUCCESS = "SMTP credentials generated successfully."
+SMTP_CREDENTIAL_CONNECTION_SUCCESS = "SMTP connection established successfully."
+SMTP_CREDENTIAL_CONNECTION_ERROR = "SMTP connection failed, Check your SMTP connection credentials."
+SMTP_CREDENTIAL_UPDATION_SUCCESS = "SMTP credentials updated successfully."
+SMTP_CONNECTION_SUCCESS = "SMTP connection success, Please check your inbox to validate the connection."
+SMTP_CREDENTIAL_NOT_SET = "Please create SMTP credentials first and try again."
+
+# Authentication
+INVALID_CREDENTIAL = "You have entered incorrect email or password."
+USER_DEACTIVATED_OR_DRAFT = "The registered user is temporarily in-actived."
