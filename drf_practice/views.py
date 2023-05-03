@@ -86,7 +86,7 @@ def update_employee(request, emp_id):
 def delete_employee(request, emp_id):
     try:
         emp = get_object_or_404(Employee, pk=emp_id)
-        emp.delete()
+        emp.delete(archive=True)
         return APIResponse({}, status=status.HTTP_200_OK, custom_message=RECORD_DELETED)
     except Employee.DoesNotExist:
         return APIErrorResponse(data={}, status=status.HTTP_404_NOT_FOUND, custom_message=RECORD_NOT_EXIST)
@@ -123,7 +123,7 @@ def update_company(request, company_id):
 def delete_company(request, company_id):
     try:
         company = get_object_or_404(Company, pk=company_id)
-        company.delete()
+        company.delete(archive=True)
         return APIResponse({}, status=status.HTTP_200_OK, custom_message=RECORD_DELETED)
     except Company.DoesNotExist:
         return APIErrorResponse(data={}, status=status.HTTP_404_NOT_FOUND, custom_message=RECORD_NOT_EXIST)

@@ -1,9 +1,10 @@
 from django.db import models
+from base.models import BaseModel
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
 # Create your models here.
-class Company(models.Model):
+class Company(BaseModel):
     name = models.CharField(max_length=15)
 
     def __str__(self):
@@ -45,7 +46,7 @@ class CustomUserManager(BaseUserManager):
         return user
 
 
-class Employee(AbstractUser):
+class Employee(AbstractUser, BaseModel):
     """
     Model to save users details
     """

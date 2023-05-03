@@ -19,6 +19,7 @@ RECORD_CREATED = "Record created successfully."
 RECORD_DELETED = "Record deleted successfully."
 RECORD_UPDATED = "Record updated successfully."
 RECORD_NOT_EXIST = "Record does not exist or deleted."
+INSTANCE_DELETION_SUCCESS = "Instance deleted successfully."
 
 # User Management Messages
 USER_CREATION_SUCCESS = "User created successfully."
